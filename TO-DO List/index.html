@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/final/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
+    
+    <link rel="stylesheet" href="style.css">
+    <title>TO-DO Application</title>
+   
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Task Management System</h1>
+    </header>
+    <div class="wrapper">
+      <div class="task-input">
+        <input type="text" class="title" placeholder="Title" />
+        <input type="text" class="description" placeholder="Description" />
+        <input type="date" class="due-date" placeholder="Due Date" />
+      </div>
+      <div class="controls">
+        <div class="filters">
+          <span id="all" class="active">All</span>
+          <span id="pending">Incomplete</span>
+          <span id="completed">Completed</span>
+        </div>
+        <div class="search-box">
+          <input type="text" id="search" placeholder="Search..." />
+        </div>
+        <button class="add-btn">Add Task</button>
+      </div>
+      <ul class="task-box"></ul>
+    </div>
+
+    <script src="/scr.js"></script>
+  </body>
+</html>

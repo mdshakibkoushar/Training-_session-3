@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  background-color: #e8e5f7;
+}
+header {
+  text-align: center;
+  margin: 10px 0;
+}
+header h1 {
+  font-size: 2rem;
+  color: #3c3d37;
+}
+.wrapper {
+  background-color: wheat;
+  width: 600px;
+  margin: 50px auto;
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+.task-input {
+  display: flex;
+  gap: 10px; 
+  align-items: center; 
+  margin-bottom: 10px; 
+}
+.task-input input {
+  height: 40px;
+  padding: 0 10px;
+  border-radius: 5px;
+  border: 1px solid rgb(57, 51, 51);
+  outline: none;
+}
+
+.task-input .title {
+  width: 22%;
+}
+.task-input .description {
+  width: 50%;
+}
+.task-input .due-date {
+  width: 22%;
+}
+.controls {
+  padding: 18px 30px;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  gap: 20px; 
+  cursor: pointer;
+}
+.filters {
+  display: flex;
+  gap: 10px;
+}
+
+.filters span.active {
+  color: rgb(148, 59, 225);
+}
+.search-box {
+  flex: 1; 
+}
+.search-box input {
+  padding: 7px;
+  border: 1px solid rgb(57, 51, 51);
+  border-radius: 5px;
+  outline: none;
+  font-size: 14px;
+}
+.controls .add-btn {
+  outline: none;
+  border: none;
+  color: white;
+  padding: 7px 20px;
+  background-color: #3c3d37;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 13px;
+  margin-right: -20px; 
+}
+
+.task-box {
+  margin: 20px 25px;
+}
+.task-box .task {
+  display: flex;
+  flex: 1;
+  align-items: center; 
+  justify-content: space-between; 
+  padding: 15px 40px;
+  margin-bottom: 7px; 
+  background-color: whitesmoke; 
+  border-radius: 10px; 
+}
+.task-box .task label {
+  flex: 1;
+  display: flex;
+  align-items: center; 
+}
+.task-box .task h3 {
+  flex: 1;
+  margin-right: auto;
+  font-size: 1rem;
+}
+.task-box .task p {
+  flex: 3;
+  /* margin-right: 50px; */
+  font-size: large;
+}
+.task-box .task small {
+  flex: 1;
+  font-size: 14px;
+  color: black;
+}
+.task .settings {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  position: relative;
+}
+.settings .task-menu {
+  position: absolute;
+  border-radius: 7px;
+  background-color: rgb(249, 226, 226);
+  padding: 5px 15px;
+  transform: scale(0);
+  box-shadow: 2px 1px 6px rgb(6, 4, 0);
+  transform-origin: top right;
+  transition: transform 0.4s ease;
+}
+.settings:hover .task-menu {
+  transform: scale(1);
+}
+
+.task label input:checked ~ h3,
+.task label input:checked ~ p,
+.task label input:checked ~ small {
+  text-decoration: line-through;
+  color: rgb(231, 9, 9); 
+}
+.task-menu li:hover {
+  cursor: pointer;
+  background-color: rgb(230, 221, 203);
+  border-radius: 7px;
+  width: 80px;
+}
+.task-menu li:last-child {
+  width: 80px;
+}
+
+.task label input {
+  margin-right: 10px;
+}
