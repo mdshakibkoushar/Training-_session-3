@@ -1,0 +1,127 @@
+.navbar {
+    background-color: #333;
+    padding: 10px 20px;
+  }
+  
+  .navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .navbar-title {
+    color: #fff;
+    font-size: 1.5rem;
+    flex-grow: 1;
+  }
+  
+  .navbar-links {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    flex-grow: 1;
+  }
+  
+  .navbar-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 5px 10px;
+  }
+  
+  .navbar-links a:hover {
+    background-color: #555;
+    border-radius: 4px;
+  }
+  
+  .navbar-admin-icon {
+    color: #fff;
+    margin-left: 20px;
+    font-size: 1.5rem;
+  }
+  .navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar-title {
+    font-size: 1.5rem;
+  }
+  
+  .navbar-links {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .navbar-links a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .navbar-icons {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  .logout-button {
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .logout-button:hover {
+    color: #d20808;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .navbar-title {
+      font-size: 1rem;
+      text-align: center;
+      display: flex;
+    }
+  
+    .navbar-links {
+      flex-direction: row;
+      gap: 0.1px;
+    }
+  
+    .navbar-links a {
+      font-size: 0.9rem;
+    }
+  
+    .navbar-admin-icon {
+      margin-left: 0;
+      margin-top: 0px;
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .navbar-title {
+      font-size:0rem;
+    }
+  
+    .navbar-links a {
+      font-size: 0.6rem;
+    }
+  
+    .navbar-admin-icon {
+      font-size: 0;
+    }
+  }
+  
